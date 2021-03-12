@@ -76,6 +76,12 @@
   }
 }
 
+@media screen and (max-width: 434px) {
+  .rightsreserved {
+    padding: 20px 6px;
+  }
+}
+
 .t-top {
   z-index: 999;
   position: fixed;
