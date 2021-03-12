@@ -1,0 +1,376 @@
+section.services {
+  height: fit-content;
+  width: 100%;
+  margin: auto;
+  background-color: #f2f2f2;
+
+  .introtitle {
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0;
+
+    .servicetitle {
+      color: $fantaOrange;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      color: black;
+      margin-bottom: 0.4rem;
+    }
+
+    .line {
+      margin-top: 1rem;
+      width: 50px;
+      height: 4px;
+      background-color: $fantaOrange;
+      border-radius: 2px;
+    }
+
+    .slider {
+      margin-top: 2rem;
+      width: 100%;
+      height: 324px;
+      overflow: auto;
+      white-space: nowrap;
+      margin-bottom: 4rem;
+
+      .card {
+        display: inline-block;
+        margin-right: 1rem;
+        width: 269px;
+        height: 269px;
+        background-color: white;
+        border-radius: 23px;
+        position: relative;
+        z-index: 3;
+        cursor: auto;
+
+        .circle {
+          position: absolute;
+          left: 50%;
+          top: 15%;
+          width: 3.4rem;
+          height: 3.4rem;
+          background-color: $fantaOrange;
+          transform: translate(-50%, -15%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2rem;
+        }
+
+        i {
+          border-radius: 2rem;
+          font-size: 1.7rem;
+          color: white;
+        }
+
+        h5 {
+          position: absolute;
+          color: $triGrayscale;
+          left: 50%;
+          top: 60%;
+          transform: translate(-50%, -60%);
+        }
+      }
+
+      .services-pop {
+        color: $fantaOrange !important;
+      }
+
+      .div {
+        position: absolute;
+        bottom: -7%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 54px;
+        width: 207px;
+        box-shadow: 0 0 150px #eee;
+        background-color: white;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+          color: $quadGrayscale;
+        }
+      }
+    }
+
+    .findyourdevice {
+      margin-bottom: 2rem;
+    }
+
+    .fyd-container {
+      width: 100%;
+      display: flex;
+
+      .device-picker {
+        height: 617px;
+        width: 50%;
+        margin-right: 2rem;
+
+        .fyd-box {
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          box-shadow: 0 14px 30px rgba(0, 0, 0, 0.07);
+          border-radius: 44px;
+          padding: 3rem;
+
+          .apporand {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 85px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+            border-radius: 14px;
+
+            .apple,
+            .android {
+              display: flex;
+              text-decoration: none;
+
+              .applebtn,
+              .androidbtn {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+              }
+
+              .applebtn {
+                i,
+                h3 {
+                  color: $fantaOrange;
+                }
+              }
+              i {
+                font-size: 2rem;
+                margin-right: 0.6rem;
+              }
+            }
+          }
+
+          .apple-devicecontainer,
+          .apple-devicecontainer2 {
+            width: 100%;
+            height: calc(100% - 85px);
+
+            .idevices {
+              background-color: $justWhite;
+              box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+              overflow: auto;
+              white-space: nowrap;
+              display: flex;
+              padding: 0.3rem 1rem;
+              border-radius: 14px;
+              margin-top: 1rem;
+
+              li {
+                display: inline-flex;
+                font-size: 18px;
+                margin-right: 0.6rem;
+                cursor: pointer;
+              }
+
+              .iPhone {
+                color: $fantaOrange;
+              }
+            }
+
+            .eachitem,
+            .eachitemOne {
+              width: 100%;
+              height: calc(100% - 36.9px);
+
+              h4 {
+                padding-top: 1rem;
+                margin-left: 1rem;
+                font-weight: 400;
+              }
+            }
+
+            .eachitem2,
+            .eachitemTwo {
+              width: 100%;
+              height: calc(100% - 36.9px);
+              display: none;
+
+              h4 {
+                margin-left: 1rem;
+                padding-top: 1rem;
+                font-weight: 400;
+              }
+            }
+
+            .eachitem3,
+            .eachitemThree {
+              width: 100%;
+              height: calc(100% - 36.9px);
+              display: none;
+
+              h4 {
+                margin-left: 1rem;
+                padding-top: 1rem;
+                font-weight: 400;
+              }
+            }
+
+            .eachitem4,
+            .eachitemFour {
+              width: 100%;
+              height: calc(100% - 36.9px);
+              display: none;
+
+              h4 {
+                margin-left: 1rem;
+                padding-top: 1rem;
+                font-weight: 400;
+              }
+            }
+
+            .eachitem5,
+            .eachitemFive {
+              width: 100%;
+              height: calc(100% - 36.9px);
+              display: none;
+
+              h4 {
+                margin-left: 1rem;
+                padding-top: 1rem;
+                font-weight: 400;
+              }
+            }
+          }
+
+          .apple-devicecontainer2 {
+            width: 100%;
+            height: calc(100% - 85px);
+            display: none;
+
+            .eachitemOne,
+            .eachitemTwo,
+            .eachitemThree,
+            .eachitemFour,
+            .eachitemFive {
+              width: 100%;
+              height: calc(100% - 36.9px);
+            }
+          }
+        }
+      }
+
+      .didnt-device {
+        height: 617px;
+        width: 50%;
+
+        .fyd-box {
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+          border-radius: 44px;
+          padding: 3rem;
+
+          h3 {
+            color: $fantaOrange;
+          }
+
+          form {
+            margin-top: 23px;
+            width: 100%;
+            height: calc(100% - 36.4px);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            label input {
+              margin-bottom: 1rem;
+              height: 3.75rem;
+              width: 100%;
+              border-radius: 15px;
+              outline: none;
+              border: 1px solid #dcdcdc;
+              background-color: unset;
+              box-shadow: none !important;
+              padding: 0px 14px;
+              font-size: 18px;
+              color: $quadGrayscale;
+              -webkit-appearance: none;
+            }
+
+            input::placeholder {
+              color: #dcdcdc;
+              opacity: 1; /* Firefox */
+            }
+
+            button {
+              position: absolute;
+              bottom: 1.3rem;
+              left: 0;
+              width: 100%;
+              height: 3.75rem;
+              border: none;
+              border-radius: 15px;
+              background-color: $fantaOrange;
+              font-size: 18px;
+              text-transform: uppercase;
+              font-weight: 600;
+              color: $justWhite;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .fyd-container {
+    flex-direction: column;
+    .fyd-box {
+      width: 100% !important;
+    }
+
+    .device-picker {
+      width: 100% !important;
+      margin-bottom: 2rem;
+    }
+
+    .didnt-device {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fyd-box {
+    padding: 3rem 1.3rem !important;
+    width: 100% !important;
+  }
+
+  .apple,
+  .android {
+    a {
+      align-items: center;
+    }
+
+    h3 {
+      font-size: 18px !important;
+
+      i {
+        font-size: 1rem !important;
+      }
+    }
+  }
+
+  form {
+    button {
+      bottom: 2rem !important;
+    }
+  }
+}

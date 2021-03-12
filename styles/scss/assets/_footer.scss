@@ -1,0 +1,109 @@
+#footer {
+  padding: 6rem 0;
+  height: fit-content;
+  background-image: url(/assets/img/footer_background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .all-f-content {
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+
+    .f-smlinks {
+      display: flex;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.6rem;
+          margin-right: 1.8rem;
+        }
+      }
+    }
+
+    .oh-us {
+      margin-top: 4.1975rem;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 30% 30%;
+
+      .left,
+      .right {
+        h3 {
+          font-weight: 600;
+          color: white;
+        }
+
+        .line {
+          margin-top: 0.3rem;
+          margin-bottom: 1.6rem;
+          width: 50px;
+          height: 4px;
+          background-color: $fantaOrange;
+          border-radius: 2px;
+        }
+
+        h5 {
+          font-weight: 500;
+          color: white;
+        }
+      }
+
+      .right {
+        form {
+          margin-top: 1rem;
+          display: flex;
+
+          label {
+            input {
+              width: 220px;
+              padding: 0.5rem 0.4rem;
+              border: none;
+              outline: none;
+              border-radius: 7px 0 0 7px;
+            }
+          }
+
+          button {
+            width: 40px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background-color: $fantaOrange;
+            border-radius: 0 7px 7px 0;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .oh-us {
+    grid-template-columns: 50% 50% !important;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .oh-us {
+    grid-template-columns: 100% !important;
+    grid-template-rows: 1fr 1fr;
+
+    .left,
+    .right {
+      height: fit-content !important;
+    }
+
+    .right {
+      h3 {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+section.gallery {
+  padding: 4rem 0;
+  position: relative;
+  background-color: #f2f2f2;
+
+  .gallerytitle {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    h4 {
+      color: $fantaOrange;
+    }
+
+    .line {
+      margin-top: 1rem;
+      width: 50px;
+      height: 4px;
+      background-color: $fantaOrange;
+      border-radius: 2px;
+    }
+  }
+
+  .gallery {
+    margin-top: 4rem;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto; /*i write auto four time because we want four rows*/
+    grid-gap: 2vh;
+    grid-auto-flow: dense;
+
+    .img {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 44px;
+    }
+  }
+
+  .gallery .img:first-child {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+  }
+
+  .gallery .img:nth-child(4n + 5) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+  }
+  .gallery .img:nth-child(6n + 7) {
+    grid-row-start: span 1;
+  }
+  .gallery .img:nth-child(8n + 9) {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+  }
+  .gallery .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .gallerywantmore {
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+    a {
+      display: inline-flex;
+      align-items: center;
+      i {
+        margin-right: 0.6rem;
+      }
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: $fantaOrange;
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: unset;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .gallerytitle {
+    margin-bottom: 2rem !important;
+  }
+  .gallery {
+    display: block !important;
+  }
+  .gallery .img {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    margin: 10% 0;
+  }
+
+  .gallery .lastimg {
+    margin-bottom: 0 !important;
+  }
+  .gallery .img img {
+    display: block !important;
+  }
+}

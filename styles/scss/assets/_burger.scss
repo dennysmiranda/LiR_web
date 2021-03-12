@@ -1,0 +1,46 @@
+.mb-navlinks {
+  opacity: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .hero {
+    position: relative;
+  }
+
+  .mb-navlinks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $primaryGrayscale;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 600ms ease-in-out;
+    z-index: -1;
+
+    li {
+      height: 50px;
+      border-bottom: 1px solid #131313;
+      display: flex;
+      align-items: center;
+
+      a {
+        color: white;
+        padding-left: 2rem;
+        padding-right: 20px;
+        text-decoration: none;
+      }
+    }
+
+    .lastlink {
+      border: none !important;
+    }
+  }
+}
+
+.mb-navlinks-active {
+  display: block !important;
+  transform: translateY(0px);
+  opacity: 1;
+  z-index: 2;
+}

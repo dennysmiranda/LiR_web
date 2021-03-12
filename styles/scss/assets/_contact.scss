@@ -1,0 +1,215 @@
+#contact {
+  height: fit-content;
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+
+  .contactbox {
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    border-radius: 44px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+
+    .contactleft {
+      border-radius: 44px 0 0 44px;
+      position: relative;
+      width: 70%;
+      height: 838.4px;
+      background-color: rgb(255, 255, 255);
+      padding: 4rem;
+
+      .contact-title {
+        h4 {
+          color: $fantaOrange;
+        }
+      }
+
+      .line {
+        width: 50px;
+        height: 4px;
+        background-color: $fantaOrange;
+        border-radius: 2px;
+        margin-top: 1rem;
+      }
+
+      .contact-desc {
+        h4 {
+          font-weight: 400;
+          margin-top: 2rem;
+          color: #6c6c6c;
+          width: 70%;
+        }
+      }
+
+      .contactlinks {
+        margin-top: 4rem;
+        li {
+          list-style: none;
+          margin-bottom: 2rem;
+          width: fit-content;
+          :hover {
+            color: $fantaOrange;
+          }
+
+          a {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: #6c6c6c;
+
+            h4 {
+              font-weight: 400;
+            }
+
+            i {
+              font-size: 1.3rem;
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+
+      .sm-links {
+        position: absolute;
+        left: 4rem;
+        bottom: 4rem;
+        display: flex;
+        li {
+          list-style: none;
+          margin-right: 2rem;
+
+          a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #6c6c6c;
+
+            :hover {
+              color: $fantaOrange;
+            }
+          }
+        }
+      }
+    }
+
+    .contactright {
+      border-radius: 0 44px 44px 0;
+      width: 30%;
+      height: fit-content;
+      background-image: url(/assets/img/contactform_background.jpg);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 4rem;
+
+      form {
+        h2 {
+          color: #ffffff;
+          margin-bottom: 2rem;
+        }
+        input {
+          height: 3.75rem;
+        }
+
+        input,
+        textarea {
+          margin-bottom: 1rem;
+          width: 100%;
+          border-radius: 15px;
+          outline: none;
+          border: 1px solid #dcdcdc;
+          background-color: unset;
+          color: #dcdcdc;
+          padding: 0px 14px;
+          font-size: 18px;
+          -webkit-appearance: none;
+        }
+
+        textarea {
+          padding: 14px;
+        }
+
+        button {
+          width: 100%;
+          height: 3.75rem;
+          border: none;
+          border-radius: 15px;
+          background-color: #ee7b31;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #ffffff;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .contactleft,
+  .contactright {
+    height: fit-content !important;
+    width: 50% !important;
+  }
+
+  .contactleft {
+    height: 838.4px !important;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .contact-desc {
+    h4 {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .contactleft,
+  .contactright {
+    padding: 3rem 1.3rem !important;
+  }
+
+  .sm-links {
+    left: 1.3rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactbox {
+    flex-direction: column;
+    box-shadow: none !important;
+
+    .contactleft,
+    .contactright {
+      height: fit-content !important;
+      width: 100% !important;
+      padding: 3rem 1.3rem !important;
+      border-radius: 44px !important;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.07);
+    }
+
+    .contactleft {
+      margin-bottom: 2rem;
+      .contactlinks {
+        margin-bottom: 10rem;
+      }
+
+      .sm-links {
+        left: 1.3rem !important;
+        bottom: 3rem !important;
+      }
+    }
+  }
+
+  form {
+    textarea {
+      height: calc(357.6px / 2) !important;
+    }
+  }
+}
